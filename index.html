@@ -1,11 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aghil | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #020617);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 12px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #94a3b8;
+      background: #020617;
+    }
+
+    .social a {
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Aghil 👋</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
-  <p>More coming soon 🚀</p>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Aghil P</h1>
+    <p>MSc Data Analytics | Aspiring DevOps & ML Engineer</p>
+    <p>
+      I am passionate about data, cloud, and building intelligent systems. I love solving real-world problems using technology and continuously learning new tools.
+    </p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Predictive Maintenance & Quality Monitoring</h3>
+      <p>
+        A system to detect anomalies and monitor product quality in Horizontal Flow Wrapper machines using CNN and IoT sensor data.
+      </p>
+      <div>
+        <span class="tag">Python</span>
+        <span class="tag">CNN</span>
+        <span class="tag">IoT</span>
+        <span class="tag">Machine Learning</span>
+      </div>
+      <p>
+        🔗 <a href="https://github.com/yourprojectlink" target="_blank">View Project</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Medizone - Generic Medicine Finder</h3>
+      <p>
+        A web app that scans prescriptions and finds generic medicines using CNN and NLP, built with Django.
+      </p>
+      <div>
+        <span class="tag">Django</span>
+        <span class="tag">Python</span>
+        <span class="tag">CNN</span>
+        <span class="tag">NLP</span>
+      </div>
+      <p>
+        🔗 <a href="https://github.com/yourprojectlink" target="_blank">View Project</a>
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="card">
+      <h3>Certificate Name 1</h3>
+      <p>🔗 <a href="https://your-certificate-link" target="_blank">View Certificate</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Certificate Name 2</h3>
+      <p>🔗 <a href="https://your-certificate-link" target="_blank">View Certificate</a></p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact & Social</h2>
+
+    <div class="card">
+      <p>📧 Email: yourname@email.com</p>
+      <p>🌐 GitHub: <a href="https://github.com/aghiilp" target="_blank">github.com/aghiilp</a></p>
+
+      <div class="social">
+        <p>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+          <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> |
+          <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Aghil P. Built with ❤️ and hosted on GitHub Pages.</p>
+  </footer>
+
 </body>
 </html>
